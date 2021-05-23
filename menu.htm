@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=<"utf-8">
+    <title>Кафе вареничная "Пельмондо"</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+ function animate(id) {
+  var node = document.getElementById(id).childNodes[0];
+  var text = node.data;
+  setInterval(function () {
+   text = text.substring(1) + text[0];
+   node.data = text;
+  }, 125); //интервал прокрутки, мс
+ }
+ window.addEventListener('load', function (e) { animate('marqueeline'); }, false);
+</script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	</div>
+		 	<div id="navigation"><div class="marquee"><span>!!!АКЦИЯ!!! при покупке кофе LAVAZZA десерт в подарок !!!АКЦИЯ!!!</span></div>
+	</div>
+		 
+	<div id="sidebar">
+	<h2><a  class="menu" href="./index.htm">О Кафе</a><br>
+			<a  class="menu" href="./menu.htm">Меню</a><br>
+			<a  class="menu" href="./foto.htm">Фото</a><br>
+			<a  class="menu" href="./map.htm">Контакты</a> </p></h2>
+	</div>
+		 
+		 
+	<div id="content">
+	<table border="0" width="90%" cellpadding="5">
+   <tr>
+    <th><img src="./menu/3.jpg" width="250" height="167"> <br>Пельмени с индейкой 8шт.<br> цена 150 руб.</th>
+    <th><img src="./menu/4.jpg" width="250" height="167"> <br> Пельмени с уткой 8шт.<br> цена 140 руб.</th>
+    <th><img src="./menu/5.jpg" width="250" height="167"><br> Пельмени с лососем 8шт.<br> цена 200 руб.<br></th>
+    <th><img src="./menu/5.jpg" width="250" height="167"><br> Пельмени с лососем 8шт.<br> цена 200 руб.<br></th>
+   </tr>
+   <tr>
+    <td><img src="./menu/6.jpg" width="250" height="167"> <br> Пельмени куриные 8шт.<br> цена 160 руб.</td>
+    <td><img src="./menu/1.jpg" width="250" height="167">
+ <br> Вареники с вишней 8шт.<br> цена 120 руб.<br> </td>
+    <td><img src="./menu/7.jpg" width="250" height="167"> <br> Пельмени цветные куриные 8шт.<br> цена 150 руб.<br></td>
+    <td><img src="./menu/1.jpg" width="250" height="167">
+ <br> вареники Адыгейские 8шт.<br> цена 130 руб.</td>
+  </tr>
+ </table>
+
+	</div>
+		 
+	<div id="clear">
+		 
+	</div>
+							   
+	<div id="footer">
+	<h2><a href="./index.htm">Кафе вареничная</a>
+  | <a href="./menu.htm">Меню</a>
+  | <a href="./foto.htm">Фотогаллерея</a>
+  | <a href="./map.htm">Контакты</a></h2>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=<"utf-8">
+    <title>Кафе вареничная "Пельмондо"</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript">
+ function animate(id) {
+  var node = document.getElementById(id).childNodes[0];
+  var text = node.data;
+  setInterval(function () {
+   text = text.substring(1) + text[0];
+   node.data = text;
+  }, 125); //интервал прокрутки, мс
+ }
+ window.addEventListener('load', function (e) { animate('marqueeline'); }, false);
+</script>
+</head>
+<body>
+<div id="container">
+	<div id="header">
+	</div>
+		 	<div id="navigation"><div class="marquee"><span>!!!АКЦИЯ!!! при покупке кофе LAVAZZA десерт в подарок !!!АКЦИЯ!!!</span></div>
+	</div>
+		 
+	<div id="sidebar">
+	<h2><a  class="menu" href="./index.htm">О Кафе</a><br>
+			<a  class="menu" href="./menu.htm">Меню</a><br>
+			<a  class="menu" href="./foto.htm">Фото</a><br>
+			<a  class="menu" href="./map.htm">Контакты</a> </p></h2>
+	</div>
+		 
+	<div id="content">
+	<h2>КОНТАКТЫ<br>Ждем Вас по адресу: первый этаж бизнес-центра Измайловский<br> (подъезд №2).<br>
+Тел: +7 (921) 646-37-31.</h2>
+	
+		<p align="center">
+<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4fd9f730fefe8b9c55204d997d7603f6ced71d1104929e24169d2f226c278a68&amp;source=constructor" width="500" height="300" frameborder="0"></iframe></p>
+		 </div>
+	<div id="clear">
+		 	</div>				   
+	<div id="footer">
+	<h2><a href="./index.htm">Кафе вареничная</a>
+  | <a href="./menu.htm">Меню</a>
+  | <a href="./foto.htm">Фотогаллерея</a>
+  | <a href="./map.htm">Контакты</a></h2>
+	</div>
+	</div>
+</body>
+</html>
